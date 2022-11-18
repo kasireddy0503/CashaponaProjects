@@ -2,7 +2,7 @@ package com.cashapona.studentManagement.requestResponses;
 
 import java.util.List;
 
-import com.cashapona.studentManagement.entities.Parent;
+
 
 public class StudentParentRequest {
 
@@ -14,7 +14,7 @@ public class StudentParentRequest {
 	private Double  studentFee;
 	private String  studentCourse;
 	private Integer studentMarks;
-	private List<Parent> parentsList;
+	private List<ParentDto> parentsList;
 	
 	
 	public String getStudentName() {
@@ -61,18 +61,12 @@ public class StudentParentRequest {
 	}
 	
 	
-	public List<Parent> getParentsList() {
+	public List<ParentDto> getParentsList() {
 		return parentsList;
 	}
-	public void setParentsList(List<Parent> parentsList) {
+	public void setParentsList(List<ParentDto> parentsList) {
 		this.parentsList = parentsList;
 	}
 	
-	@Override
-	public String toString() {
-		return "StudentParentRequest [studentName=" + studentName + ", studentAddress=" + studentAddress
-				+ ", studentGender=" + studentGender + ", studentAge=" + studentAge + ", studentFee=" + studentFee
-				+ ", studentCourse=" + studentCourse + ", studentMarks=" + studentMarks + ", parentsList=" + parentsList
-				+ "]";
-	}
+	
 }
